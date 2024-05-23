@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        /* Basic reset and setting for the body */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9f9f9; /* Light background color for the page */
+            margin: 0;
+            padding: 0;
+        }
+        /* Container styling */
+        .container {
+            max-width: 400px; /* Limit container width */
+            margin: 50px auto; /* Center the container with margin */
+            background-color: #fff; /* White background for the form */
+            padding: 20px 30px; /* Padding inside the container */
+            border-radius: 15px; /* More pronounced rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        /* Header styling */
+        h2 {
+            text-align: center; /* Center the heading text */
+            margin-bottom: 20px; /* Space below the heading */
+            color: #333; /* Dark grey color for the heading */
+        }
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column; /* Stack form elements vertically */
+        }
+        /* Label styling */
+        label {
+            margin-bottom: 5px; /* Space below labels */
+            color: #555; /* Medium grey color for labels */
+        }
+        /* Input fields styling */
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%; /* Full width input fields */
+            padding: 12px; /* Padding inside input fields */
+            margin-bottom: 20px; /* Space below input fields */
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 4px; /* Rounded corners for inputs */
+            box-sizing: border-box; /* Include padding and border in width/height */
+            font-size: 16px; /* Increase font size for better readability */
+        }
+        /* Input fields focus styling */
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #007BFF; /* Blue border on focus */
+            outline: none; /* Remove default outline */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+        }
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #007BFF; /* Blue background for the button */
+            color: white; /* White text color */
+            padding: 12px; /* Padding inside the button */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Larger font size */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        /* Link styling */
+        .container a {
+            color: #007BFF; /* Blue color for links */
+            text-decoration: none; /* Remove underline from links */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        /* Link hover effect */
+        .container a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        /* Additional text below the form */
+        .container h3 {
+            text-align: center; /* Center the text */
+            margin-top: 20px; /* Space above the text */
+            color: #777; /* Light grey color for text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form header -->
+        <h2>User Registration Form</h2>
+        <!-- Registration form -->
+        <form action="registeruser.php" method="POST">
+            <!-- Username input -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Submit button -->
+            <input type="submit" value="Register"><br>
+            <!-- Login link -->
+            <h3>Already have an account? <a href="login.html">Login</a></h3>
+        </form>
+    </div>
+</body>
+</html>
